@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>alert username and password are same</title>
+        <script type="text/javascript">
+        function fn1()
+        {
+            var str1 = document.getElementById("text1").value;
+            var str2 = document.getElementById("text2").value;
+            if(str1==str2)
+            {
+                alert("Username and Password are same");
+            }
+            else
+                alert("username and password are not same");
+        }
+        </script>
+    </head>
+    <body>
+        <input id="text1" placeholder="username">
+        <br><br>
+        <input type="password" id="text2" placeholder="password">
+        <br><br>
+        <button onclick="fn1()">click me </button>
+    </body>
+</html>
