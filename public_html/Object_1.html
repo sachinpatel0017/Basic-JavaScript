@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Intoduction to Object</title>
+        <script type="text/javascript">
+            var Car = {
+                car_brand: "Tesla",
+                car_model: "Model3",
+                price: 35000,
+                teslaAutoPilot: function ()
+                {
+                    document.write("<h2>This car has autopilot </h2>");
+                }
+            }
+            Car.fueltype="Electric";
+            delete Car.price;
+            Car.price="45000";
+            document.write("<h2>"+typeof(Car.price)+"</h2>");
+            Car.teslaAutoPilot();
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
