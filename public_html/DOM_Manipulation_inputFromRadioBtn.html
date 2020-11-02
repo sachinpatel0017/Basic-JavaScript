@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Input from radio button</title>
+        <script type="text/javascript">
+            function fn1()
+            {
+                var rd1 = document.getElementById("rd1");
+                var rd2 = document.getElementById("rd2");
+                if (rd1.checked == true)
+                    alert("Channel selected is : " + rd1.value);
+                else if (rd2.checked == true)
+                    alert("Channel selected is : " + rd2.value);
+                else
+                    alert("No channel slected");
+            }
+        </script>
+    </head>
+    <body>
+        <input  id="rd1" name="grp1" type="radio" value="Sachin patel">Sachin Patel </input>
+        <br>
+        <input  id="rd2" name="grp1" type="radio" value="Learning Javascript">Learning Javascript</input>
+        <br>
+        <button onclick="fn1()" id="btn1">click me</button>
+    </body>
+</html>
