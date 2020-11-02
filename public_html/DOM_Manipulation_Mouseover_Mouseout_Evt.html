@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Mouse Over and Mouse out Events</title>
+        <script type="text/javascript">
+            function NewImg()
+            {
+                document.getElementById("img1").alt = "Img/Happy.jpg";
+            }
+            function OldImg()
+            {
+                document.getElementById("img1").alt = "Img/Sad.jpg";
+            }
+        </script>
+    </head>
+    <body>
+        <img id="img1" onmouseover="NewImg()" onmouseout="OldImg()" src="" alt="Img/Sad.jpg" width="300"/>
+    </body>
+</html>
