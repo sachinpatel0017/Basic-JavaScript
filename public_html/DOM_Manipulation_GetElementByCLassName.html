@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Get Element by Class Name</title>
+        <script type="text/javascript">
+            function fn1()
+            {
+                var element = document.getElementsByClassName("mypara");
+                var select = document.getElementById("para1");
+                select.style.fontWeight = "bold";
+                for (var x = 0; x < element.length; x++)
+                    element[x].style.color = "red";
+                
+            }
+        </script>
+    </head>
+    <body>
+        <p id="para1" class="mypara">this is paragraph1</p> 
+        <p>paragraph2</p>
+        <p class="mypara">paragraph3</p>
+        <p>paragraph4</p>
+        <p class="mypara">paragraph5</p>
+        <a class="mypara" href="#">My anchor Link</a>
+        <br>
+        <br>
+        <button onclick="fn1()">Click Me</button>
+    </body>
+</html>
