@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Input from select box</title>
+        <script type="text/javascript">
+        function fn1()
+        {
+            var select=document.getElementById("select");
+            alert(select.options[select.selectedIndex].value)
+        }
+        </script>
+    </head>
+    <body>
+        <select id="select">
+            <option value="Sachin Patel">Sachin Patel</option>
+            <option value="Shubham Patel">Shubham Patel</option>
+            <option value="Sanidhya Patel">Sanidhya Patel</option>
+        </select>
+        <br>
+        <button onclick="fn1()">Click me</button>
+    </body>
+</html>
