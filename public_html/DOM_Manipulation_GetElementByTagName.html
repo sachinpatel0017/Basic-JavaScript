@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Get element by tagname</title>
+        <script type="text/javascript">
+            function fn1() {
+                var para = document.getElementsByTagName("p");
+                para[0].style.fontSize=25;
+                para[1].style.color = "red";
+                para[2].style.fontWeight = "bold";
+                para[3].style.fontStyle = "Italic";
+            }
+        </script>
+    <body>
+        <p>This is paragraph1</p>
+        <p>This is paragraph2</p>
+        <p>This is paragraph3</p>
+        <p>This is paragraph4</p>
+        <p>This is paragraph5</p>
+        <br>
+        <button onclick="fn1()">Click me </button>
+    </body>
+</html>
